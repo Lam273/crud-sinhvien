@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Sinh Viên - MockAPI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Quản Lý Sinh Viên</h1>
+
+<form id="studentForm">
+    <input type="hidden" id="id">
+    <input type="text" id="name" placeholder="Họ tên" required>
+    <input type="text" id="phone" placeholder="Số điện thoại" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="avatar" placeholder="Link Avatar">
+    <button type="submit">Lưu</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Avatar</th>
+            <th>Họ tên</th>
+            <th>SĐT</th>
+            <th>Email</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
